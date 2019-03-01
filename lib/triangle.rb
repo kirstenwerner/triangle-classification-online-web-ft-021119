@@ -36,7 +36,7 @@ class Triangle
       :equilateral 
     elsif self.isosceles == true && self.triangle_inequality == true 
       :isosceles 
-    elsif self.scalene == true
+    elsif self.triangle_inequality == true
       :scalene 
     else #!equilateral && !isosceles && !scalene
       raise TriangleError
