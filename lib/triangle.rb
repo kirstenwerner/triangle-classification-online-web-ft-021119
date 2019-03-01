@@ -30,7 +30,7 @@ class Triangle
     
   
   def kind 
-    if @triangle_sides.any?{|num| num <= 0}
+    if @triangle_sides.any?{|num| num <= 0 || num == nil}
       raise TriangleError
     elsif self.equilateral == true 
       :equilateral 
