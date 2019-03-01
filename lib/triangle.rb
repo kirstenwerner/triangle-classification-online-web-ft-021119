@@ -22,7 +22,7 @@ class Triangle
     end 
   end
   
-  def scalene
+  def triangle_inequality
     if (@a + @b > @c) && (@a + @c > @b) && (@b + @c > @a)
       true 
     end 
